@@ -1,10 +1,10 @@
-# Road Incident Detection Ì∫¶
+# Road Incident Detection
 
 ## Overview  
 This repository implements the approach presented in the paper:  
 **‚ÄúA New Approach to Road Incident Detection Leveraging Live Traffic Data‚Äù**  
 Published in *Procedia Computer Science, Elsevier (2024)*.  
-Ì±â [Read on ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1877050924008937)
+ÔøΩÔøΩÔøΩ [Read on ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1877050924008937)
 
 Our work introduces a scalable, real-time pipeline for detecting road accidents and anomalies using **live traffic data feeds**.
 
