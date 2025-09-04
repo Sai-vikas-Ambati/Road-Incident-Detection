@@ -1,45 +1,79 @@
-# Road Incident Detection
+# Road Incident Detection ���
 
-## Overview  
-This repository implements the approach presented in the paper:  
-**“A New Approach to Road Incident Detection Leveraging Live Traffic Data”**  
-Published in *Procedia Computer Science, Elsevier (2024)*.  
-��� [Read on ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1877050924008937)
-
-Our work introduces a scalable, real-time pipeline for detecting road accidents and anomalies using **live traffic data feeds**.
+The **Road Incident Detection** project is a computer vision application designed to detect unusual motion events (accidents, traffic jams, sudden stops) in road surveillance footage. It provides a baseline motion-based detector with extendable architecture for integrating advanced deep learning models later.
 
 ---
 
-## Key Features  
-- ✅ **Live data ingestion** from traffic APIs  
-- ✅ **Preprocessing pipeline** for cleaning and feature extraction  
-- ✅ **Anomaly detection engine** for real-time incident identification  
-- ✅ **Alert system** to notify with location, time, and severity  
-- ✅ **Evaluation framework** with accuracy, precision, recall, and latency  
+## ✨ Features
+- Real-time motion-based detection of road incidents.
+- Works with videos, webcam feeds, or live streams.
+- Saves annotated videos with bounding boxes.
+- Configurable detection sensitivity and frame skipping.
+- Lightweight, runs on CPU (no GPU required).
+- Extendable for advanced ML/DL integration.
 
 ---
 
-## Project Setup  
+## ��� Project Structure
 
-### 1. Clone the repository  
+
+Road-Incident-Detection/
+│── app.py # Main script for detection
+│── requirements.txt # Python dependencies
+│── data/ # Sample input videos (e.g., sample.mp4)
+│── outputs/ # Saved results with annotations
+│── README.md # Documentation
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
 ```bash
 git clone https://github.com/Sai-vikas-Ambati/Road-Incident-Detection.git
 cd Road-Incident-Detection
-# Road Incident Detection
 
-## Quickstart (Baseline Motion Detector)
-
-```bash
-# (optional) create venv
+2. (Optional) Create virtual environment
 python -m venv .venv
-source .venv/Scripts/activate
+source .venv/Scripts/activate   # Windows PowerShell
+# For Linux/Mac:
+# source .venv/bin/activate
 
+3. Install dependencies
 pip install -r requirements.txt
 
-# webcam
-python app.py --source 0 --display
-
-# video file and save annotated result
+▶️ Usage
+Run with sample video
 python app.py --source data/sample.mp4 --save
 
+Run with webcam
+python app.py --source 0
+
+Run with network stream
+python app.py --source rtsp://username:password@ip:port/stream
+
+
+--save → saves output to outputs/
+
+--display → enables live preview (if supported)
+
+���️ Tech Stack
+
+Python 3.8+
+
+OpenCV – for video processing & motion detection
+
+NumPy – for frame manipulation
+
+Requests / OS – for optional logging & integrations
+
+��� Contributing
+
+Pull requests are welcome! Please follow the conventional commit style for commits (feat:, fix:, docs:, etc.) and ensure code passes linting before submitting.
+
+��� License
+
+This project is licensed under the MIT License. See LICENSE
+ for details.
 
