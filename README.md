@@ -26,3 +26,20 @@ Our work introduces a scalable, real-time pipeline for detecting road accidents 
 git clone https://github.com/Sai-vikas-Ambati/Road-Incident-Detection.git
 cd Road-Incident-Detection
 # Road Incident Detection
+
+## Quickstart (Baseline Motion Detector)
+
+```bash
+# (optional) create venv
+python -m venv .venv
+source .venv/Scripts/activate
+
+pip install -r requirements.txt
+
+# webcam
+python app.py --source 0 --display
+
+# video file and save annotated result
+python app.py --source data/sample.mp4 --save
+
+
