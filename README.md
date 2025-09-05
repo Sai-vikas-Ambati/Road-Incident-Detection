@@ -1,3 +1,21 @@
+cat > README.md << 'EOF'
+# Road Incident Detection
+
+The **Road Incident Detection** project is a computer vision + data analysis tool to identify anomalies in road traffic patterns.
+
+## âœ¨ Features
+- Motion/event-based detection
+- Anomaly detection using statistical analysis
+- Extendable for ML/DL integration
+
+## í³‚ Project Structure
+- `traffic_analysis.py` â†’ Python script for anomaly detection
+- `requirements.txt` â†’ Dependencies
+- `README.md` â†’ Documentation
+
+## âš™ï¸ Installation
+```bash
+pip install -r requirements.txt
 # Road Incident Detection íº¦
 
 The **Road Incident Detection** project is a computer vision application designed to detect unusual motion events (accidents, traffic jams, sudden stops) in road surveillance footage. It provides a baseline motion-based detector with extendable architecture for integrating advanced deep learning models later.
@@ -77,3 +95,21 @@ Pull requests are welcome! Please follow the conventional commit style for commi
 This project is licensed under the MIT License. See LICENSE
  for details.
 
+cat > README.md << 'EOF'
+# Road Incident Detection
+
+The **Road Incident Detection** project is a computer vision + data analysis tool to identify anomalies in road traffic patterns.
+
+## âœ¨ Features
+- Motion/event-based detection
+- Anomaly detection using statistical analysis
+- Extendable for ML/DL integration
+
+## í³‚ Project Structure
+- `traffic_analysis.py` â†’ Python script for anomaly detection
+- `requirements.txt` â†’ Dependencies
+- `README.md` â†’ Documentation
+
+## âš™ï¸ Installation
+```bash
+pip install -r requirements.txt
