@@ -1,14 +1,19 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.db
+
+# Environments
 .venv/
 env/
-# Data & outputs
-data/
-runs/
-# OS cruft
+venv/
+
+# Data files
+*.csv
+*.xlsx
+
+# OS
 .DS_Store
 Thumbs.db
-# IDE
-.vscode/
-.idea/
